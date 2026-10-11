@@ -1,0 +1,20 @@
+{
+  "name": "playwright-sample-structure",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "test:ui": "playwright test --ui",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.0",
+    "dotenv": "^17.2.4",
+    "prettier": "^3.9.5",
+    "typescript": "^6.0.3",
+    "vite": "^8.1.5"
+  }
+}

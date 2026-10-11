@@ -1,30 +1,34 @@
-<testsuites id="" name="" tests="8" failures="0" skipped="0" errors="0" time="8.389361000000001">
-<testsuite name="auth.setup.ts" timestamp="2026-10-10T09:21:14.319Z" hostname="setup-standard" tests="1" failures="0" skipped="0" time="0.674" errors="0">
-<testcase name="authenticate as the standard user" classname="auth.setup.ts" time="0.674">
+<testsuites id="" name="" tests="9" failures="0" skipped="0" errors="0" time="20.67512">
+<testsuite name="auth.setup.ts" timestamp="2026-10-11T08:13:08.217Z" hostname="setup-standard" tests="1" failures="0" skipped="0" time="1.262" errors="0">
+<testcase name="authenticate as the standard user" classname="auth.setup.ts" time="1.262">
 </testcase>
 </testsuite>
-<testsuite name="locked-out.setup.ts" timestamp="2026-10-10T09:21:14.319Z" hostname="setup-locked-out" tests="1" failures="0" skipped="0" time="0.739" errors="0">
-<testcase name="authenticate as the locked out user" classname="locked-out.setup.ts" time="0.739">
+<testsuite name="locked-out.setup.ts" timestamp="2026-10-11T08:13:08.217Z" hostname="setup-locked-out" tests="1" failures="0" skipped="0" time="1.086" errors="0">
+<testcase name="authenticate as the locked out user" classname="locked-out.setup.ts" time="1.086">
 </testcase>
 </testsuite>
-<testsuite name="cart.e2e.ts" timestamp="2026-10-10T09:21:14.319Z" hostname="chromium-standard" tests="1" failures="0" skipped="0" time="1.428" errors="0">
-<testcase name="Cart › authenticated user can add every product to the cart" classname="cart.e2e.ts" time="1.428">
+<testsuite name="cart.e2e.ts" timestamp="2026-10-11T08:13:08.217Z" hostname="chromium-standard" tests="1" failures="0" skipped="0" time="3.95" errors="0">
+<testcase name="Cart › authenticated user can add every product to the cart" classname="cart.e2e.ts" time="3.95">
 </testcase>
 </testsuite>
-<testsuite name="logging.e2e.ts" timestamp="2026-10-10T09:21:14.319Z" hostname="chromium-standard" tests="3" failures="0" skipped="0" time="2.512" errors="0">
-<testcase name="Login protection for invalid cases › user cannot log in with invalid credentials @regression" classname="logging.e2e.ts" time="0.79">
-</testcase>
-<testcase name="Login protection for invalid cases › locked user cannot log in @regression" classname="logging.e2e.ts" time="0.843">
-</testcase>
-<testcase name="Successful login › standard user is redirected to the products page" classname="logging.e2e.ts" time="0.879">
+<testsuite name="checkout.e2e.ts" timestamp="2026-10-11T08:13:08.217Z" hostname="chromium-standard" tests="1" failures="0" skipped="0" time="4.322" errors="0">
+<testcase name="Checkout › authenticated user add every product to the cart" classname="checkout.e2e.ts" time="4.322">
 </testcase>
 </testsuite>
-<testsuite name="products.e2e.ts" timestamp="2026-10-10T09:21:14.319Z" hostname="chromium-standard" tests="1" failures="0" skipped="0" time="0.93" errors="0">
-<testcase name="Products page › authenticated user can view products and open the cart" classname="products.e2e.ts" time="0.93">
+<testsuite name="logging.e2e.ts" timestamp="2026-10-11T08:13:08.217Z" hostname="chromium-standard" tests="3" failures="0" skipped="0" time="7.949" errors="0">
+<testcase name="Login protection for invalid cases › user cannot log in with invalid credentials @regression" classname="logging.e2e.ts" time="2.809">
+</testcase>
+<testcase name="Login protection for invalid cases › locked user cannot log in @regression" classname="logging.e2e.ts" time="2.796">
+</testcase>
+<testcase name="Successful login › standard user is redirected to the products page" classname="logging.e2e.ts" time="2.344">
 </testcase>
 </testsuite>
-<testsuite name="locked-out-user.e2e.ts" timestamp="2026-10-10T09:21:14.319Z" hostname="chromium-locked-out" tests="1" failures="0" skipped="0" time="0.724" errors="0">
-<testcase name="Locked-out User Restrictions › should not be able to bypass restriction by navigating directly to inventory" classname="locked-out-user.e2e.ts" time="0.724">
+<testsuite name="products.e2e.ts" timestamp="2026-10-11T08:13:08.217Z" hostname="chromium-standard" tests="1" failures="0" skipped="0" time="2.428" errors="0">
+<testcase name="Products page › authenticated user can view products and open the cart" classname="products.e2e.ts" time="2.428">
+</testcase>
+</testsuite>
+<testsuite name="locked-out-user.e2e.ts" timestamp="2026-10-11T08:13:08.217Z" hostname="chromium-locked-out" tests="1" failures="0" skipped="0" time="1.398" errors="0">
+<testcase name="Locked-out User Restrictions › should not be able to bypass restriction by navigating directly to inventory" classname="locked-out-user.e2e.ts" time="1.398">
 </testcase>
 </testsuite>
 </testsuites>

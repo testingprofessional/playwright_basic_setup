@@ -1,11 +1,15 @@
 import { Page, test as baseTest } from '@playwright/test';
 import { LoginPage } from '../support/views/loginPage.ts';
 import { ProductsPage } from '../support/views/productsPage.ts';
+import { CartPage } from '../support/views/cartPage.ts';
+import { CheckoutPage } from '../support/views/checkoutPage.ts';
 import { AppHealthKey, checkAppHealth } from './appHealth.ts';
 
 export type TestOptions = {
   loginPage: LoginPage;
   productsPage: ProductsPage;
+  cartPage: CartPage;
+  checkoutPage: CheckoutPage;
 };
 
 async function ensureAppHealthOrSkip(
@@ -38,6 +42,13 @@ const test = baseTest.extend<TestOptions>({
   productsPage: async ({ page, baseURL }, use) => {
     await ensureAppHealthOrSkip('productsPage', page, baseURL);
     await use(new ProductsPage(page));
+  },
+  cartPage: async ({ page, baseURL }, use) => {
+    await ensureAppHealthOrSkip('cartPage', page, baseURL);
+    await use(new CartPage(page));
+  },
+  checkoutPage: async ({ page }, use) => {
+    await use(new CheckoutPage(page));
   },
 });
 

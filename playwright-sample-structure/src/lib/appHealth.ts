@@ -10,6 +10,14 @@ const APP_HEALTH_CHECKS = {
     name: 'Products Page',
     endpointPath: '',
   },
+  cartPage: {
+    name: 'Cart Page',
+    endpointPath: '/cart.html',
+  },
+  checkoutPage: {
+    name: 'Checkout Page',
+    endpointPath: '/checkout-step-one.html',
+  }
 } as const satisfies Record<string, AppHealthCheckConfig>;
 
 export type AppHealthKey = keyof typeof APP_HEALTH_CHECKS;

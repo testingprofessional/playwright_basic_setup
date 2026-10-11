@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "test:ui": "playwright test --ui",
+    "test-with-ui": "npx playwright test --headed",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"

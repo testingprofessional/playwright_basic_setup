@@ -43,8 +43,7 @@ const test = baseTest.extend<TestOptions>({
     await ensureAppHealthOrSkip('productsPage', page, baseURL);
     await use(new ProductsPage(page));
   },
-  cartPage: async ({ page, baseURL }, use) => {
-    await ensureAppHealthOrSkip('cartPage', page, baseURL);
+  cartPage: async ({ page }, use) => {
     await use(new CartPage(page));
   },
   checkoutPage: async ({ page }, use) => {

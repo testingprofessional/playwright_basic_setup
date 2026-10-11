@@ -9,14 +9,6 @@ const APP_HEALTH_CHECKS = {
   productsPage: {
     name: 'Products Page',
     endpointPath: '',
-  },
-  cartPage: {
-    name: 'Cart Page',
-    endpointPath: '/cart.html',
-  },
-  checkoutPage: {
-    name: 'Checkout Page',
-    endpointPath: '/checkout-step-one.html',
   }
 } as const satisfies Record<string, AppHealthCheckConfig>;
 
